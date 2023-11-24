@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorteoTest", "SorteoTest\SorteoTest.csproj", "{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B164E36-DF28-421C-8D2A-31A0E473ED98} = {6B164E36-DF28-421C-8D2A-31A0E473ED98}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorteo.Data", "Sorteo.Data\Sorteo.Data.csproj", "{6B164E36-DF28-421C-8D2A-31A0E473ED98}"
 EndProject
