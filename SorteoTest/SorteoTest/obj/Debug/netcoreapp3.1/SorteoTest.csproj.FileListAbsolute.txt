@@ -1,0 +1,10 @@
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\bin\Debug\netcoreapp3.1\SorteoTest.exe
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\SorteoTest.csprojAssemblyReference.cache
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\SorteoTest.AssemblyInfoInputs.cache
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\SorteoTest.AssemblyInfo.cs
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\SorteoTest.RazorTargetAssemblyInfo.cache
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\staticwebassets\SorteoTest.StaticWebAssets.Manifest.cache
+C:\Users\Lok1To\source\repos\SorteoTest\SorteoTest\obj\Debug\netcoreapp3.1\staticwebassets\SorteoTest.StaticWebAssets.xml

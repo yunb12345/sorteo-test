@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorteoTest", "SorteoTest\SorteoTest.csproj", "{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorteo.Data", "Sorteo.Data\Sorteo.Data.csproj", "{6B164E36-DF28-421C-8D2A-31A0E473ED98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AABBC1-79CE-4CCF-9CE9-AE39E6172A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B164E36-DF28-421C-8D2A-31A0E473ED98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B164E36-DF28-421C-8D2A-31A0E473ED98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B164E36-DF28-421C-8D2A-31A0E473ED98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B164E36-DF28-421C-8D2A-31A0E473ED98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {657D4502-5A14-42EB-B50B-53D3326CD021}
+	EndGlobalSection
+EndGlobal
