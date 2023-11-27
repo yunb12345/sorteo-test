@@ -11,6 +11,7 @@ namespace Sorteo.Data.Interfaz
     {
         private readonly Contexto context;
 
+
         public Repository(Contexto context)
         {
             this.context = context;
@@ -22,7 +23,11 @@ namespace Sorteo.Data.Interfaz
                 return context.Set<T>();
             }
         }
+        public async Task<IEnumerable<T>> Get(int? id)
+        {
+            return await EntitySet.ToListAsync();
 
+        }
         public async Task<T> Add(T entity)
         {
             EntitySet.Add(entity);

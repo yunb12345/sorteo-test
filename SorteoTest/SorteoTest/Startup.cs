@@ -12,7 +12,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Sorteo.Data;
-
+using Sorteo.Data.Context;
+using Sorteo.Data.Interfaz;
+using Sorteo.Data.Entity;
 
 namespace SorteoTest
 {
@@ -30,7 +32,8 @@ namespace SorteoTest
         {
             services.AddControllers();
             services.AddDbContext<Contexto>(options => options.UseSqlServer(Configuration.GetConnectionString("Contexto")));
-            services.AddScoped<IRepository, Repository>();
+            services.AddScoped<IRepository<Participante>, Repository<Participante>>();
+            //Scoped, transcient, singleton
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

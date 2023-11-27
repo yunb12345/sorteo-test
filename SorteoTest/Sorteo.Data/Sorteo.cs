@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sorteo.Data.Entity
+namespace Sorteo.Data
 {
     public class Sorteo
     {

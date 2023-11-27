@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Sorteo.Data.Entity;
+using Sorteo.Data;
 
 
 namespace Sorteo.Data.Context
