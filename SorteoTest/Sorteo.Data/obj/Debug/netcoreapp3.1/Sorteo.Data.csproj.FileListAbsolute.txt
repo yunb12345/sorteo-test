@@ -10,3 +10,11 @@ C:\Users\Lok1To\source\repos\SorteoTest\Sorteo.Data\bin\Debug\netcoreapp3.1\Sort
 C:\Users\Lok1To\source\repos\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csproj.CoreCompileInputs.cache
 C:\Users\Lok1To\source\repos\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.dll
 C:\Users\Lok1To\source\repos\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.pdb
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csproj.AssemblyReference.cache
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.AssemblyInfoInputs.cache
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.AssemblyInfo.cs
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csproj.CoreCompileInputs.cache
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.sourcelink.json
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.dll
+D:\reposC#\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.pdb

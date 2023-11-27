@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Sorteo.Data.Entity
 {
-    class Class1
+    public class Provincia
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
     }
 }

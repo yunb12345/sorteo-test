@@ -1,11 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using Sorteo.Data.Entity;
 
 
-namespace Sorteo.Data
+namespace Sorteo.Data.Context
 {
     public class Contexto : DbContext
     {
+
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
         }

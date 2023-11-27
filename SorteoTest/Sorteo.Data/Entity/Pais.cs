@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Sorteo.Data
+namespace Sorteo.Data.Entity
 {
     public class Pais
     {
