@@ -5,7 +5,7 @@ using Sorteo.Data.Context;
 
 namespace Sorteo.Data.Interfaz
 {
-    class ReposiSorteo : Repository<Sorteo>
+    class ReposiSorteo : Repository
     {
         
         ReposiSorteo(Contexto context) : base(context)

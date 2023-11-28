@@ -9,10 +9,12 @@ using Sorteo.Data.Entity;
 
 namespace SorteoTest.Controllers
 {
-    public class SorteoControlador<Entity> : Controller where Entity : class
+    [ApiController]
+    [Route("[controller]")]
+    public class SorteoController : ControllerBase
     {
-        private readonly IRepository<Entity> _repositorio;
-        public SorteoControlador(IRepository<Entity> repository)
+        private readonly IRepository _repositorio;
+        public SorteoController(IRepository repository)
         {
             _repositorio = repository;
         }
@@ -31,30 +33,37 @@ namespace SorteoTest.Controllers
         }
         */
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetAll(int? id)
+        public async Task<IActionResult> Get(int id)
         {
-            var obj = await _repositorio.Get(id);
-            if (obj != null)
-                return NotFound();
+            var obj = await _repositorio.GetSorteo(id);
+            if (obj == null)
+                return BadRequest();
             return Ok(obj);
         }
         [HttpPost]
-        public async Task<IActionResult> Post(Entity entidad)
+        public async Task<IActionResult> Post(Sorteo.Data.Entity.Sorteo sorteo)
         {
-            await _repositorio.Add(entidad);
+            //sorteo.Id = 1;
+            sorteo.FechaInicio = DateTime.Now;
+            sorteo.FechaFin = DateTime.Now;
+            _repositorio.Add(sorteo);
             if (await _repositorio.SaveAll())
-                return Ok(entidad);
+                return Ok(sorteo);
             return BadRequest();
         }
         //GetAll devuelva json con ok, por default es json, retorna un json.
         [HttpPut("{id}")]
-        public async Task<IActionResult>Put(Entity entidad,int id)
+        public async Task<IActionResult>Put(Sorteo.Data.Entity.Sorteo sorteo,int id)
         {
-            var entidadToUpdate = await _repositorio.Get(id); //como **** saco esto
+            var entidadToUpdate = await _repositorio.GetSorteo(id);
             if (entidadToUpdate == null)
                 return NotFound();
             //codigo necesario para actualizar
-            await _repositorio.Update(entidad);
+            //await _repositorio.Update(sorteo);   esto es cuando estaba el metodo update anterior
+            entidadToUpdate.Nombre = sorteo.Nombre;
+            entidadToUpdate.FechaInicio = sorteo.FechaInicio;
+            entidadToUpdate.FechaFin = sorteo.FechaFin;
+
             if(!await _repositorio.SaveAll())
                 return NoContent();
             return Ok(entidadToUpdate);
@@ -63,14 +72,14 @@ namespace SorteoTest.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var entidad = await _repositorio.Get(id);
+            var entidad = await _repositorio.GetSorteo(id);
             if (entidad == null)
                 return NotFound();
-            await _repositorio.Delete(id);
+            _repositorio.Delete(entidad);
             if (!await _repositorio.SaveAll())
                 return NoContent();
-            return Ok();
+            return Ok("Producto eliminado");
         }
-
+        // controlador -> capa de negocio/servicio (validaciones) -> 
     }
 }

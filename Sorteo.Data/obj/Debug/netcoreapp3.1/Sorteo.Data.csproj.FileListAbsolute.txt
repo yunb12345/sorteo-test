@@ -24,3 +24,15 @@ C:\Users\Lok1To\source\repos\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcor
 C:\Users\Lok1To\source\repos\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csproj.CoreCompileInputs.cache
 C:\Users\Lok1To\source\repos\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.dll
 C:\Users\Lok1To\source\repos\sorteo-test\SorteoTest\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.pdb
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csprojAssemblyReference.cache
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.AssemblyInfoInputs.cache
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.AssemblyInfo.cs
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.csproj.CoreCompileInputs.cache
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.dll
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.pdb
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\bin\Debug\netcoreapp3.1\Sorteo.Data.deps.json
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\bin\Debug\netcoreapp3.1\Sorteo.Data.runtimeconfig.json
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\bin\Debug\netcoreapp3.1\Sorteo.Data.runtimeconfig.dev.json
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\bin\Debug\netcoreapp3.1\Sorteo.Data.dll
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\bin\Debug\netcoreapp3.1\Sorteo.Data.pdb
+C:\Users\Lok1To\source\repos\sorteo-test\Sorteo.Data\obj\Debug\netcoreapp3.1\Sorteo.Data.genruntimeconfig.cache

@@ -12,7 +12,7 @@ namespace Sorteo.Data.Context
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
         }
-        public DbSet<Sorteo> Sorteos { get; set; }
+        public DbSet<Sorteo.Data.Entity.Sorteo> Sorteos { get; set; }
         public DbSet<Participante> Participantes { get; set; }
         public DbSet<Direccion> Direcciones { get; set; }
         public DbSet<Pais> Paises { get; set; }

@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace Sorteo.Data.Interfaz
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository
     {
-        Task<T> Get(int? id);
-        Task<T> Add(T entity);
-        Task<T> Delete(int id);
-        Task Update(T entity);
+        Task<Sorteo.Data.Entity.Sorteo> GetSorteo(int? id);
+        void Add<T>(T entity);
+        void Delete<T>(T entity);
+        //void Update<T>(T entity);
         Task<bool> SaveAll();
     }
 }

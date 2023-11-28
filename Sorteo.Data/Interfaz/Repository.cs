@@ -4,10 +4,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Sorteo.Data.Context;
+using Sorteo.Data.Entity;
 
 namespace Sorteo.Data.Interfaz
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository : IRepository
     {
         private readonly Contexto context;
 
@@ -16,6 +17,7 @@ namespace Sorteo.Data.Interfaz
         {
             this.context = context;
         }
+        /*
         protected DbSet<T> EntitySet
         {
             get
@@ -23,37 +25,39 @@ namespace Sorteo.Data.Interfaz
                 return context.Set<T>();
             }
         }
-        public async Task<T> Get(int? id)
+        */
+        public async Task<Sorteo.Data.Entity.Sorteo> GetSorteo(int? id)
         {
-            //var entity = await context.T.FirstOrDefaultAsync(u => u.Id == id);
-            //return await EntitySet.ToListAsync();
-            return await EntitySet.FindAsync(id);
+            var entity = await context.Sorteos.FirstOrDefaultAsync(u => u.Id == id);
+            return entity;
+            //return await context.FindAsync(id);;
 
         }
-        public async Task<T> Add(T entity)
+        public void Add<T>(T entity)
         {
-            EntitySet.Add(entity);
-            await context.SaveChangesAsync();
-            return entity;
+            context.Add(entity);
+            //await context.SaveChangesAsync();
         }
 
-        public async Task<T> Delete(int id)
+        public void Delete<T>(T entity)
         {
-            T entity = await EntitySet.FindAsync(id);
-            EntitySet.Remove(entity);
-            await context.SaveChangesAsync();
-            return entity;
+            //T entity = await EntitySet.FindAsync(id);
+            //EntitySet.Remove(entity);
+            //T entidad = await context.FindAsync(id);
+            context.Remove(entity);
+            //await context.SaveChangesAsync();
         }
 
         public async Task<bool> SaveAll()
         {
             return await context.SaveChangesAsync() > 0;
         }
-
+        /*
         public async Task Update(T entity)
         {
             context.Entry(entity).State = EntityState.Modified;
             await context.SaveChangesAsync();
         }
+        */
     }
 }

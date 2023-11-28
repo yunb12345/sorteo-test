@@ -32,7 +32,7 @@ namespace SorteoTest
         {
             services.AddControllers();
             services.AddDbContext<Contexto>(options => options.UseSqlServer(Configuration.GetConnectionString("Contexto")));
-            services.AddScoped<IRepository<Participante>, Repository<Participante>>();
+            services.AddScoped<IRepository, Repository>();
             //Scoped, transcient, singleton
         }
 
